@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CVC Deck Norte — Comunidade de viagens no WhatsApp</title>
+  <meta name="description" content="Entre na comunidade CVC Deck Norte e receba ofertas exclusivas de viagem direto no seu WhatsApp." />
+  <meta property="og:title" content="CVC Deck Norte — Ofertas exclusivas para quem ama viajar" />
+  <meta property="og:description" content="Ofertas em primeira mão e condições especiais no WhatsApp da CVC Deck Norte." />
+  <meta property="og:type" content="website" />
+  <!-- Ao publicar, troque por URL absoluta (ex.: https://seu-dominio/assets/og-image.png) -->
+  <meta property="og:image" content="assets/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="CVC Deck Norte — Ofertas exclusivas para quem ama viajar" />
+  <meta name="twitter:description" content="Ofertas em primeira mão e condições especiais no WhatsApp da CVC Deck Norte." />
+  <meta name="twitter:image" content="assets/og-image.png" />
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1120838577468085');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1120838577468085&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="preload" as="image" href="assets/cvc-logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap" />
+  <style>
+    :root {
+      --brand: oklch(30% .13 262);
+      --brand-foreground: oklch(99% 0 0);
+      --highlight: oklch(90% .18 98);
+      --background: oklch(100% 0 0);
+      --foreground: oklch(12.9% .042 264.695);
+      --card: oklch(100% 0 0);
+      --card-foreground: oklch(12.9% .042 264.695);
+      --muted-foreground: oklch(55.4% .046 257.417);
+      --border: oklch(92.9% .013 255.508);
+      --radius: .625rem;
+      --font-sans: "Nunito", ui-sans-serif, system-ui, sans-serif;
+    }
+
+    /* Reset (equivalente ao preflight do Tailwind) */
+    *, ::before, ::after { box-sizing: border-box; margin: 0; padding: 0; border: 0 solid; border-color: var(--border); }
+    html { line-height: 1.5; -webkit-text-size-adjust: 100%; tab-size: 4; -webkit-tap-highlight-color: transparent; }
+    body { background-color: var(--background); color: var(--foreground); font-family: var(--font-sans); }
+    h1, p { font-size: inherit; font-weight: inherit; }
+    h1 { font-size: inherit; }
+    a { color: inherit; text-decoration: inherit; }
+    strong { font-weight: bolder; }
+    ul { list-style: none; }
+    img, svg { display: block; vertical-align: middle; }
+    img { max-width: 100%; height: auto; }
+
+    .container { max-width: 72rem; margin-inline: auto; padding-inline: 1.5rem; }
+
+    /* Página */
+    .page { min-height: 100vh; background: var(--brand); color: var(--brand-foreground); }
+
+    /* Header */
+    .header { border-bottom: 4px solid var(--highlight); background: var(--background); color: var(--foreground); }
+    .header .container { display: flex; align-items: center; justify-content: space-between; padding-block: 1.25rem; }
+    .header-brand { display: flex; align-items: center; gap: 1.25rem; }
+    .logo-stack { display: flex; flex-direction: column; align-items: center; line-height: 1; }
+    .logo-stack span { margin-top: .25rem; font-weight: 700; color: var(--brand); }
+    .logo-stack.sm img { width: 2.75rem; height: 2.75rem; }
+    .logo-stack.sm span { font-size: 1rem; line-height: 1.5rem; }
+    .logo-stack.lg img { width: 4rem; height: 4rem; }
+    .logo-stack.lg span { font-size: 1.125rem; line-height: 1.75rem; }
+    .header-title { display: none; }
+    .header-title .name { font-size: 1.125rem; line-height: 1.75rem; font-weight: 700; color: var(--brand); }
+    .header-title .tagline { font-size: .875rem; line-height: 1.25rem; color: var(--muted-foreground); }
+    .header-badge { display: flex; align-items: center; gap: .5rem; font-size: .875rem; line-height: 1.25rem; color: var(--muted-foreground); }
+    @media (min-width: 40rem) { .header-title { display: block; } }
+
+    .i3 { width: .75rem; height: .75rem; }
+    .i4 { width: 1rem; height: 1rem; }
+    .i5 { width: 1.25rem; height: 1.25rem; }
+    .i6 { width: 1.5rem; height: 1.5rem; }
+
+    /* Hero */
+    .hero { display: grid; align-items: center; gap: 3.5rem; padding-block: 5rem; }
+    @media (min-width: 64rem) { .hero { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+
+    .eyebrow { display: flex; align-items: center; gap: .5rem; font-size: .75rem; line-height: 1rem; font-weight: 700; text-transform: uppercase; letter-spacing: .025em; color: var(--highlight); }
+    .hero h1 { margin-top: 1.25rem; font-size: 3rem; line-height: 1.05; font-weight: 900; }
+    @media (min-width: 48rem) { .hero h1 { font-size: 3.75rem; } }
+    .hl { color: var(--highlight); }
+    .lead { margin-top: 1.5rem; max-width: 28rem; font-size: 1.125rem; line-height: 1.75rem; color: color-mix(in oklab, var(--brand-foreground) 80%, transparent); }
+    .lead strong { color: var(--brand-foreground); }
+
+    .perks { margin-top: 1.5rem; display: flex; flex-wrap: wrap; column-gap: 1.5rem; row-gap: .5rem; font-size: .875rem; line-height: 1.25rem; }
+    .perks li { display: flex; align-items: center; gap: .5rem; }
+    .perks svg { color: var(--highlight); }
+
+    .cta { margin-top: 2rem; display: flex; max-width: 24rem; align-items: center; justify-content: space-between; border-radius: calc(var(--radius) - 2px); background: var(--highlight); padding: 1rem 1.5rem; font-weight: 700; color: var(--brand); transition: transform .15s cubic-bezier(.4, 0, .2, 1); }
+    .cta > span { display: flex; align-items: center; gap: .5rem; }
+    @media (hover: hover) { .cta:hover { transform: scale(1.02); } }
+
+    .note { margin-top: 1rem; display: flex; align-items: center; gap: .5rem; font-size: .75rem; line-height: 1rem; color: color-mix(in oklab, var(--brand-foreground) 70%, transparent); }
+
+    /* Cartão de embarque */
+    .ticket { margin-inline: auto; width: 100%; max-width: 28rem; rotate: 2deg; overflow: hidden; border-radius: var(--radius); background: var(--card); color: var(--card-foreground); box-shadow: 0 25px 50px -12px #00000040; }
+    .ticket-head { display: flex; align-items: center; justify-content: space-between; background: var(--highlight); padding: 1rem 1.5rem; font-size: .75rem; line-height: 1rem; font-weight: 700; text-transform: uppercase; color: var(--brand); }
+    .ticket-body { padding: 1.5rem; }
+    .ticket-body > * + * { margin-top: 1.5rem; }
+    .row-top { display: flex; align-items: flex-start; justify-content: space-between; }
+    .right { text-align: right; }
+    .label { font-size: .75rem; line-height: 1rem; text-transform: uppercase; color: var(--muted-foreground); }
+    .strong-brand { font-weight: 700; color: var(--brand); }
+    .route { display: flex; align-items: center; gap: .75rem; }
+    .route-from { display: flex; align-items: center; gap: .5rem; }
+    .route-from img { width: 2.5rem; height: 2.5rem; }
+    .route-from p { font-size: .75rem; line-height: 1rem; font-weight: 700; color: var(--brand); }
+    .route-line { display: flex; flex: 1; align-items: center; gap: .5rem; color: var(--brand); }
+    .route-line .dash { flex: 1; border-top: 1px dashed var(--border); }
+    .route-to .big { font-size: 1.875rem; line-height: 2.25rem; font-weight: 900; color: var(--brand); }
+    .route-to .small { font-size: .75rem; line-height: 1rem; color: var(--muted-foreground); }
+    .benefit { display: flex; gap: .75rem; }
+    .benefit svg { color: var(--brand); }
+    .benefit .desc { font-size: .875rem; line-height: 1.25rem; color: var(--muted-foreground); }
+    .ticket-foot { display: flex; align-items: flex-end; justify-content: space-between; border-top: 2px dashed var(--border); padding: 1.25rem 1.5rem; }
+    .barcode { height: 2.5rem; width: 7rem; background: repeating-linear-gradient(90deg, var(--brand) 0 2px, transparent 2px 4px, var(--brand) 4px 5px, transparent 5px 8px); }
+
+    /* Faixa de benefícios */
+    .strip { background: var(--highlight); color: var(--brand); }
+    .strip .container { display: grid; gap: 1.5rem; padding-block: 2rem; }
+    @media (min-width: 48rem) { .strip .container { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+    .strip-item { display: flex; gap: .75rem; }
+    .strip-item .t { font-weight: 700; }
+    .strip-item .d { font-size: .875rem; line-height: 1.25rem; }
+
+    /* Footer */
+    .footer { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .5rem; padding-block: 2rem; font-size: .75rem; line-height: 1rem; color: color-mix(in oklab, var(--brand-foreground) 70%, transparent); }
+    .footer p:last-child { display: flex; align-items: center; gap: .5rem; }
+  </style>
+</head>
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="i-plane" viewBox="0 0 24 24"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/></symbol>
+      <symbol id="i-message" viewBox="0 0 24 24"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+    </defs>
+  </svg>
+
+  <div class="page">
+    <header class="header">
+      <div class="container">
+        <div class="header-brand">
+          <div class="logo-stack sm">
+            <img src="assets/cvc-logo.png" alt="CVC" />
+            <span>Deck Norte</span>
+          </div>
+          <div class="header-title">
+            <p class="name">CVC Deck Norte</p>
+            <p class="tagline">O mundo espera por você.</p>
+          </div>
+        </div>
+        <p class="header-badge">
+          <svg class="i4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg>
+          Comunidade de viagens
+        </p>
+      </div>
+    </header>
+
+    <main class="container hero">
+      <section>
+        <p class="eyebrow">
+          <svg class="i4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"/><path d="M20 2v4"/><path d="M22 4h-4"/><circle cx="4" cy="20" r="2"/></svg>
+          Sua próxima viagem começa aqui
+        </p>
+        <h1>Ofertas exclusivas para quem ama <span class="hl">viajar.</span></h1>
+        <p class="lead">Entre na comunidade <strong>CVC Deck Norte</strong> e receba oportunidades especiais, novidades e inspirações direto no seu WhatsApp.</p>
+        <ul class="perks">
+          <li><svg class="i4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-check"/></svg>Ofertas em primeira mão</li>
+          <li><svg class="i4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-check"/></svg>Condições especiais</li>
+          <li><svg class="i4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-check"/></svg>Conteúdo sem excesso</li>
+        </ul>
+        <a class="cta" data-lead href="https://chat.whatsapp.com/JPmW072Ck6HBq1XUqFbDeP?s=sw&amp;p=i&amp;mlu=4&amp;ilr=4&amp;iam=2" target="_blank" rel="noopener noreferrer">
+          <span>
+            <svg class="i5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-message"/></svg>
+            Entrar na comunidade
+          </span>
+          <svg class="i5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+        <p class="note">
+          <svg class="i3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          A participação é gratuita. Você pode sair quando quiser.
+        </p>
+      </section>
+
+      <section class="ticket" aria-label="Cartão de embarque">
+        <div class="ticket-head">
+          Cartão de embarque
+          <svg class="i5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-plane"/></svg>
+        </div>
+        <div class="ticket-body">
+          <div class="row-top">
+            <div class="logo-stack lg">
+              <img src="assets/cvc-logo.png" alt="CVC" />
+              <span>Deck Norte</span>
+            </div>
+            <div class="right">
+              <p class="label">Seu próximo destino</p>
+              <p class="strong-brand">Uma nova experiência</p>
+            </div>
+          </div>
+          <div class="route">
+            <div class="route-from">
+              <img src="assets/cvc-logo.png" alt="CVC" />
+              <p>Deck Norte</p>
+            </div>
+            <div class="route-line">
+              <span class="dash"></span>
+              <svg class="i5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-plane"/></svg>
+              <span class="dash"></span>
+            </div>
+            <div class="route-to right">
+              <p class="big">VOCÊ</p>
+              <p class="small">Próxima viagem</p>
+            </div>
+          </div>
+          <div class="benefit">
+            <svg class="i5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 7v14"/><path d="M20 11v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-8"/><path d="M7.5 7a1 1 0 0 1 0-5A4.8 8 0 0 1 12 7a4.8 8 0 0 1 4.5-5 1 1 0 0 1 0 5"/><rect x="3" y="7" width="18" height="4" rx="1"/></svg>
+            <div>
+              <p class="strong-brand">Benefícios exclusivos</p>
+              <p class="desc">Condições pensadas para a comunidade.</p>
+            </div>
+          </div>
+          <div class="benefit">
+            <svg class="i5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-message"/></svg>
+            <div>
+              <p class="strong-brand">Tudo no WhatsApp</p>
+              <p class="desc">Prático, rápido e sempre à mão.</p>
+            </div>
+          </div>
+        </div>
+        <div class="ticket-foot">
+          <div>
+            <p class="label">Seu embarque</p>
+            <p class="strong-brand">Começa na CVC Deck Norte</p>
+          </div>
+          <div class="barcode" aria-hidden="true"></div>
+        </div>
+      </section>
+    </main>
+
+    <section class="strip">
+      <div class="container">
+        <div class="strip-item">
+          <svg class="i6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M13 5v2"/><path d="M13 17v2"/><path d="M13 11v2"/></svg>
+          <div>
+            <p class="t">Mais oportunidades de viajar</p>
+            <p class="d">Ofertas para a sua próxima aventura.</p>
+          </div>
+        </div>
+        <div class="strip-item">
+          <svg class="i6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-message"/></svg>
+          <div>
+            <p class="t">Direto no seu WhatsApp</p>
+            <p class="d">As novidades chegam até você.</p>
+          </div>
+        </div>
+        <div class="strip-item">
+          <svg class="i6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><path d="M16 3.128a4 4 0 0 1 0 7.744"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><circle cx="9" cy="7" r="4"/></svg>
+          <div>
+            <p class="t">Com a CVC Deck Norte</p>
+            <p class="d">Gente que ama viajar, como você.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="container footer">
+      <p>© 2026 CVC Deck Norte. Todos os direitos reservados.</p>
+      <p>
+        <svg class="i3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-plane"/></svg>
+        Seu próximo destino começa aqui.
+      </p>
+    </footer>
+  </div>
+
+  <script>
+    // Evento Lead do Meta Pixel ao clicar em "Entrar na comunidade"
+    document.querySelectorAll('[data-lead]').forEach(function (el) {
+      el.addEventListener('click', function () {
+        if (typeof fbq === 'function') fbq('track', 'Lead', { content_name: 'Entrar na comunidade WhatsApp' });
+      });
+    });
+  </script>
+</body>
+</html>
